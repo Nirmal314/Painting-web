@@ -5,31 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Ninadarts</title>
-
-    <!-- font awesome cdn link  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-
-    <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
-
-    <!-- custom js file link  -->
     <script src="js/script.js" defer></script>
   </head>
   <body>
-    <!-- header section starts  -->
-
-    <div class="glass"></div>
     <header class="header">
+      <img src="../images/Images/full_logo.png" alt="" srcset="" />
       <div id="menu-btn" class="fas fa-bars"></div>
-      <nav class="navbar">
+      <nav>
         <a data-aos="zoom-in-left" data-aos-delay="300" href="#" id="aos_id"
           >Home</a
         >
@@ -42,61 +34,68 @@
         <a data-aos="zoom-in-left" data-aos-delay="750" href="#" id="aos_id"
           >Wishlist</a
         >
-        <i class="fa-solid fa-bag-shopping"></i>
+        <a data-aos="zoom-in-left" data-aos-delay="750" href="#" id="aos_id"
+          >Bag</a
+        >
+        <button id="shop-now">SHOP NOW</button>
       </nav>
     </header>
-
-    <!-- header section ends -->
-
-    <!-- home section starts  -->
     <main>
-      <div class="home" id="home">
+      <!-- . -->
+      <div class="home" id="home1">
         <div class="fl2">
           <p id="jumbo">Jumbo</p>
         </div>
         <div class="fl3">
           <p id="jumbo" style="font-weight: bold">01</p>
         </div>
-        <!--         
-        <div id="sidebox">
-          <p id="arrow1">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </p>
-          <p id="arrow2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </p>
-        </div> -->
       </div>
-      <!-- home section ends -->
-
-      <!-- gallery section starts -->
-
+      <!-- . -->
+      <div id="home2" style="display: none">
+        <div class="fl2">
+          <p id="jumbo">The External Peace</p>
+        </div>
+        <div class="fl3">
+          <p id="jumbo" style="font-weight: bold">02</p>
+        </div>
+      </div>
+      <!-- . -->
+      <div id="home3" style="display: none">
+        <div class="fl2">
+          <p id="jumbo">Range of Vision</p>
+        </div>
+        <div class="fl3">
+          <p id="jumbo" style="font-weight: bold">03</p>
+        </div>
+      </div>
+      <!-- . -->
+      <div id="home4" style="display: none">
+        <div class="fl2">
+          <p id="jumbo">The Edge</p>
+        </div>
+        <div class="fl3">
+          <p id="jumbo" style="font-weight: bold">04</p>
+        </div>
+      </div>
+      <!-- . -->
+      <div id="home5" style="display: none">
+        <div class="fl2">
+          <p id="jumbo">Northern Lights</p>
+        </div>
+        <div class="fl3">
+          <p id="jumbo" style="font-weight: bold">05</p>
+        </div>
+      </div>
+      <!-- . -->
+      <div id="home6" style="display: none">
+        <div class="fl2">
+          <p id="jumbo">Back to Safari</p>
+        </div>
+        <div class="fl3">
+          <p id="jumbo" style="font-weight: bold">06</p>
+        </div>
+      </div>
+      <!-- ..... -->
       <section class="gallery" id="gallery">
         <div class="heading">
           <h1>Paintings</h1>
@@ -121,10 +120,7 @@
         </div>
       </section>
 
-      <!-- gallery section ends -->
-
-      <!-- Buy section starts  -->
-
+      <!-- ..... -->
       <section class="destination" id="destination">
         <div class="heading">
           <h1>Want to Buy?</h1>
@@ -200,121 +196,7 @@
       </section>
     </main>
 
-    <!-- Buy section ends -->
-
-    <!-- services section starts 
-
-<section class="services" id="services">
-
-    <div class="heading">
-        <span>our services</span>
-        <h1>countless expericences</h1>
-    </div>
-
-    <div class="box-container">
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
-            <i class="fas fa-globe"></i>
-            <h3>worldwide</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, cumque.</p>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
-            <i class="fas fa-hiking"></i>
-            <h3>adventures</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, cumque.</p>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
-            <i class="fas fa-utensils"></i>
-            <h3>food & drinks</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, cumque.</p>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="600">
-            <i class="fas fa-hotel"></i>
-            <h3>affordable hotels</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, cumque.</p>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
-            <i class="fas fa-wallet"></i>
-            <h3>affordable price</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, cumque.</p>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="900">
-            <i class="fas fa-headset"></i>
-            <h3>24/7 support</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, cumque.</p>
-        </div>
-
-    </div>
-
-</section>
-
- services section ends -->
-
-    <!-- review section starts 
-
-<section class="review">
-
-    <div class="content" data-aos="fade-right" data-aos-delay="300">
-        <span>testimonials</span>
-        <h3>good news from our clients</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium corporis fugiat quae unde perspiciatis similique ab modi enim consequatur aperiam cumque distinctio facilis sit, debitis possimus asperiores non harum.</p>
-    </div>
-
-    <div class="box-container" data-aos="fade-left" data-aos-delay="600">
-
-        <div class="box">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
-            <div class="user">
-                <img src="images/pic-1.png" alt="">
-                <div class="info">
-                    <h3>john deo</h3>
-                    <span>designer</span>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
-            <div class="user">
-                <img src="images/pic-2.png" alt="">
-                <div class="info">
-                    <h3>john deo</h3>
-                    <span>designer</span>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
-            <div class="user">
-                <img src="images/pic-3.png" alt="">
-                <div class="info">
-                    <h3>john deo</h3>
-                    <span>designer</span>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
-            <div class="user">
-                <img src="images/pic-4.png" alt="">
-                <div class="info">
-                    <h3>john deo</h3>
-                    <span>designer</span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-review section ends -->
-
-    <!-- footer section starts  -->
+    <!-- ..... -->
 
     <section class="footer">
       <div class="box-container">
@@ -356,7 +238,7 @@ review section ends -->
       Copyright ©2022. All rights reserved by <span>NINADARTS</span>
     </div>
 
-    <!-- footer section ends -->
+    <!-- jQuery -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 

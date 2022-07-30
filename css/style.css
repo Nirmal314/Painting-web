@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap");
+
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -55,15 +56,12 @@ section {
 }
 
 .header {
-  background-attachment: fixed;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: white;
-  /* background-color: rgba(255, 255, 255, 0.1); */
-  /* background-color: #888; */
+  background-color: rgba(255, 255, 255, 0.06);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,30 +73,42 @@ section {
   justify-content: space-between;
   padding: 1.5rem 9%;
   height: 100px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
 }
-.header .navbar a {
+
+.header img {
+  width: 15vw;
+}
+#shopping-bag {
+  margin-bottom: -7px;
+  margin-left: 17px;
+  width: 1.5vw;
+}
+.header nav a {
   font-size: 1.7rem;
   color: #000;
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0 4rem;
+  /* font-weight: 800; */
 }
 
-.header .navbar a::after {
+.header nav a::after {
   content: "";
   width: 0%;
   height: 2px;
   background: #000;
   display: block;
   margin: auto;
-  transition: 0.3s;
+  transition: 0.25s;
 }
 
-.header .navbar a:hover {
+.header nav a:hover {
   font-weight: 600;
-  transition: 0.1s ease-in-out;
 }
 
-.header .navbar a:hover::after {
+.header nav a:hover::after {
   width: 60%;
 }
 
@@ -106,7 +116,21 @@ section {
   margin-top: 0;
 }
 
-.logo {
+#shop-now {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+#shop-now:hover {
+  background-color: rgb(75, 75, 75);
+}
+/* .logo {
   color: #fff;
   font-weight: bolder;
 }
@@ -114,8 +138,9 @@ section {
 .logo i {
   color: #29d9d5;
   padding-right: 0.5rem;
-}
+} */
 
+/* responsive */
 #menu-btn {
   font-size: 2.5rem;
   color: #fff;
@@ -124,12 +149,32 @@ section {
 }
 
 .home {
-  margin-top: 5rem;
   background: linear-gradient(0deg, rgba(07, 07, 07, 07), rgba(0, 0, 0, 0)),
     url(../images/Images/bg-1.png) no-repeat;
+  margin-top: 5rem;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  transition: 1s;
+  height: 100vh;
+  /* height: 0vh; */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* display: none; */
+}
+#home2 {
+  background: linear-gradient(0deg, rgba(07, 07, 07, 07), rgba(0, 0, 0, 0)),
+    url(../Archive/02.png) no-repeat;
+  margin-top: 5rem;
+  background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,7 +187,78 @@ section {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
+#home3 {
+  background: linear-gradient(0deg, rgba(07, 07, 07, 07), rgba(0, 0, 0, 0)),
+    url(../Archive/05.jpg) no-repeat;
+  margin-top: 5rem;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#home4 {
+  background: linear-gradient(0deg, rgba(07, 07, 07, 07), rgba(0, 0, 0, 0)),
+    url(../Archive/03.jpg) no-repeat;
+  margin-top: 5rem;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#home5 {
+  background: linear-gradient(0deg, rgba(07, 07, 07, 07), rgba(0, 0, 0, 0)),
+    url(../Archive/04.jpg) no-repeat;
+  margin-top: 5rem;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#home6 {
+  background: linear-gradient(0deg, rgba(07, 07, 07, 07), rgba(0, 0, 0, 0)),
+    url(../Archive/06.jpg) no-repeat;
+  margin-top: 5rem;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 .fl2 {
   display: flex;
   margin-top: 680px;
@@ -292,6 +408,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .gallery .box-container .box {
@@ -466,7 +583,7 @@ section {
   #menu-btn {
     display: inline-block;
   }
-  .header .navbar {
+  .header nav {
     position: absolute;
     top: 99%;
     left: 0;
@@ -475,11 +592,11 @@ section {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
-  .header .navbar.active {
+  .header nav.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-  .header .navbar a {
+  .header nav a {
     margin: 2rem;
     font-size: 2rem;
     display: block;

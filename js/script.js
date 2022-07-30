@@ -1,16 +1,17 @@
-let navbar = document.querySelector('.header .navbar');
+const img = ["home1", "home2", "home3", "home4", "home5", "home6"];
 
-document.querySelector('#menu-btn').onclick = () =>{
-    navbar.classList.toggle('active');
-}
-9
-window.onscroll = () =>{
-    navbar.classList.remove('active');
-}
+var i = 0;
 
-document.querySelectorAll('.about .video-container .controls .control-btn').forEach(btn =>{
-    btn.onclick = () =>{
-        let src = btn.getAttribute('data-src');
-        document.querySelector('.about .video-container .video').src = src;
+function change() {
+  document.getElementById(img[i]).style.display = "flex";
+  for (let j = 0; j < img.length; j++) {
+    if (i != j) {
+      document.getElementById(img[j]).style.display = "none";
     }
-})
+  }
+  i = (i + 1) % img.length;
+}
+
+setInterval(() => {
+  change();
+}, 4000);
